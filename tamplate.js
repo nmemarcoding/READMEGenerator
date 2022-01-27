@@ -1,6 +1,8 @@
-# readme generator
+module.exports = templateData => {
+    const {...data } = templateData
+    return `# ${data.projectName}
 ## Description
-* cread readme file bye answering some command prompt question
+* ${data.description}
 ## Table of Contents
 
 - [Installation](#installation)
@@ -9,20 +11,21 @@
 - [License](#license)
     
 ## Installation
-* node u
+* ${data.install}
 ## Usage
-* Juse need node js installed 
+* ${data.usingRepo}
 ## Credits
-* nmemarcoding 
-* nmemarcoding@gmail.com
+* ${data.userName} 
+* ${data.email}
 ## License
-* MIT
+* ${data.license}
 
 ## Features
     
 If your project has a lot of features, list them here.
     
 ## How to Contribute
-* nothing
+* ${data.contribute}
 ## Tests
-* node index
+* ${data.test}`
+}

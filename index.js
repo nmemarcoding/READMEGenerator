@@ -1,7 +1,8 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateReadme = require('./tamplate');
 
-const promptUser = () => {
+const promptUser = readmeData => {
     return inquirer.prompt([{
             type: 'input',
             name: 'userName',
@@ -68,7 +69,7 @@ const promptUser = () => {
         },
         {
             type: 'input',
-            name: "conterbut",
+            name: "contribute",
             message: "What dose the user need to know about conterbuting to the repo?"
         }
     ]);
@@ -76,5 +77,10 @@ const promptUser = () => {
 
 promptUser()
     .then(answer => {
-        console.log(answer);
+        const pageReadme = generateReadme(answer);
+        fs.writeFile('./README.md', pageReadme, err => {
+            if (err) throw new Error(err);
+
+            console.log('File created! Check out README.md in this directory to see it!')
+        });
     })
