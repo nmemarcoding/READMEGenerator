@@ -38,7 +38,8 @@ module.exports = templateData => {
 ## Credits
 * ${data.userName} 
 * ${data.email}
-${image(data.image) }
+${image(data.image)}
+
 ## License
 ${license(templateData.license)}            
 ## How to Contribute 
