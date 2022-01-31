@@ -33,6 +33,8 @@ module.exports = templateData => {
 - [License](#license)
 ## Installation 
 * ${data.install}
+## Test 
+* ${data.test}
 ## Usage
 * ${data.usingRepo}
 ## Credits
