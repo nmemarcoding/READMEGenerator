@@ -1,28 +1,20 @@
-# readme generator
+# Some Cool Project
 ## Description
-* cread readme file bye answering some command prompt question
+* This is really cool project
 ## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
+- [Installation](#installation) 
+- [Usage](#usage) 
+- [Credits](#credits) 
 - [License](#license)
-    
-## Installation
-* node u
+## Installation 
+* npm i
 ## Usage
-* Juse need node js installed 
+* Nothing
 ## Credits
 * nmemarcoding 
 * nmemarcoding@gmail.com
-## License
-* MIT
 
-## Features
-    
-If your project has a lot of features, list them here.
-    
-## How to Contribute
-* nothing
-## Tests
-* node index
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)            
+## How to Contribute 
+* Just contribute already

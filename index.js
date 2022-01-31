@@ -50,7 +50,7 @@ const promptUser = readmeData => {
         {
             type: 'list',
             name: 'license',
-            choices: ['MIT', 'GPL', 'BDS', 'CC', 'APAC', ]
+            choices: ['MIT', 'GPL', 'IBM', 'ISC', 'Apache', ]
         },
         {
             type: 'input',
@@ -71,7 +71,20 @@ const promptUser = readmeData => {
             type: 'input',
             name: "contribute",
             message: "What dose the user need to know about conterbuting to the repo?"
+        },
+        {
+            type: 'confirm',
+            name: "confirmImage",
+            message: "Would you like add any screen shot of deployed app?",
+            default: true
+        },
+        {
+            type: 'input',
+            name: 'image',
+            message: "Enter screen shot URL:",
+            when: ({ confirmImage }) => confirmImage
         }
+
     ]);
 };
 
