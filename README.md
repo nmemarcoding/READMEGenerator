@@ -9,7 +9,7 @@
 ## Installation 
 * npm i
 ## Test 
-* npm test
+* npm index
 ## Usage
 * just downlod the app and use it
 ## Credits
