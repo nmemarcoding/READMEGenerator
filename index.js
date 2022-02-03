@@ -1,6 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateReadme = require('./tamplate');
+const generateReadme = require('./utils/tamplate.js');
 
 const promptUser = readmeData => {
     return inquirer.prompt([{
