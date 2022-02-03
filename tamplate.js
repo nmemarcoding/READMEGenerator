@@ -1,9 +1,9 @@
 // retun image link
-const image = imageLink => {
-        if (!imageLink) {
+const video = videoLink => {
+        if (!videoLink) {
             return '';
         }
-        return `${imageLink}`;
+        return `${videoLink}`;
     }
     // retun license image link
 const license = licenseName => {
@@ -36,14 +36,13 @@ module.exports = templateData => {
 ## Test 
 * ${data.test}
 ## Usage
-* ${data.usingRepo}
+* ${data.usingRepo} [link](${video(data.video)})    
 ## Credits
-* ${data.userName} 
-* ${data.email}
-${image(data.image)}
-
+* ${data.credits}
 ## License
 ${license(templateData.license)}            
 ## How to Contribute 
-* ${data.contribute}`
+* ${data.contribute}
+## Questions
+* For further information, please check out my github repository at https://github.com/${data.userName}, or by emailing ${data.email}`
 }
