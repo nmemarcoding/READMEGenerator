@@ -73,16 +73,21 @@ const promptUser = readmeData => {
             message: "What dose the user need to know about conterbuting to the repo?"
         },
         {
+            type: 'input',
+            name: 'credits',
+            message: 'List any contributors or third-party assets you wish to mention.',
+        },
+        {
             type: 'confirm',
-            name: "confirmImage",
-            message: "Would you like add any screen shot of deployed app?",
+            name: "confirmVideo",
+            message: "Would you like add any viedo deployed app?",
             default: true
         },
         {
             type: 'input',
-            name: 'image',
-            message: "Enter screen shot URL:",
-            when: ({ confirmImage }) => confirmImage
+            name: 'video',
+            message: "Enter video URL:",
+            when: ({ confirmVideo }) => confirmVideo
         }
 
     ]);
